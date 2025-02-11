@@ -15,20 +15,6 @@ CREATE TABLE Works (
     Salary NUMBER
 );
 
--- Creating Company Table
-CREATE TABLE Company (
-    Emp_no NUMBER,
-    City VARCHAR2(50)
-);
-
--- Creating Manages Table
-CREATE TABLE Manages (
-    Emp_no NUMBER,
-    Manager_name VARCHAR2(50),
-    Mang_no NUMBER
-);
-
-
 -- Insertion code 
 INSERT INTO Employee (Emp_no, Employee_name, Street, City) VALUES
 (101, 'John Doe', '123 Main St', 'New York'),
@@ -45,14 +31,6 @@ INSERT INTO Works (Emp_no, Company_name, Joining_date, Designation, Salary) VALU
 (103, 'HealthCare Ltd', TO_DATE('2019-08-10', 'YYYY-MM-DD'), 'Doctor', 80000),
 (104, 'EduWorld', TO_DATE('2016-05-25', 'YYYY-MM-DD'), 'Professor', 75000),
 (105, 'BuildIt', TO_DATE('2020-01-30', 'YYYY-MM-DD'), 'Civil Engineer', 72000);
-
--- Insertion code 
-INSERT INTO Company (Emp_no, City) VALUES
-(101, 'New York'),
-(102, 'Los Angeles'),
-(103, 'Chicago'),
-(104, 'Houston'),
-(105, 'San Francisco');
 
 
 -- pl/sql code
